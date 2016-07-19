@@ -9,10 +9,8 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
+public interface Packing {
     
-    public String name();
-    public Packing packing();
-    public float price();
+    public String pack();
     
 }

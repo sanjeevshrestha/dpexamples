@@ -9,10 +9,11 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
-    
-    public String name();
-    public Packing packing();
-    public float price();
+public class Wrapper implements Packing{
+
+    @Override
+    public String pack() {
+        return "Wrapper: Pack";
+    }
     
 }

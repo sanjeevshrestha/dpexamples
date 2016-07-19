@@ -9,10 +9,16 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
-    
-    public String name();
-    public Packing packing();
-    public float price();
+public class Pepsi extends ColdDrink{
+
+    @Override
+    public String name() {
+        return "Pepsi";
+    }
+
+    @Override
+    public float price() {
+        return 2.15f;
+    }
     
 }

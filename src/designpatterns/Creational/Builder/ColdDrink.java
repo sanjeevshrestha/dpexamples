@@ -9,10 +9,13 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
+public abstract class ColdDrink implements Item {
     
-    public String name();
-    public Packing packing();
-    public float price();
+    @Override
+    public Packing packing()
+    {
+       return new Bottle();
+    }
+
     
 }

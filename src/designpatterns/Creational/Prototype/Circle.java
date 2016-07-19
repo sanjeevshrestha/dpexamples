@@ -3,16 +3,22 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package designpatterns.Creational.Builder;
+package designpatterns.Creational.Prototype;
 
 /**
  *
  * @author sanjeev
  */
-public interface Item {
+public class Circle extends Shape{
+
+    public Circle() {
+        type="Circle";
+    }
+
     
-    public String name();
-    public Packing packing();
-    public float price();
+    @Override
+    public void draw() {
+        System.out.println("Circle : Draw");
+    }
     
 }

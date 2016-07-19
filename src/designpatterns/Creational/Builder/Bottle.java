@@ -9,10 +9,13 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
+public class Bottle implements Packing{
+
+    @Override
+    public String pack() {
+        
+        return "Bottle";
+    }
     
-    public String name();
-    public Packing packing();
-    public float price();
     
 }

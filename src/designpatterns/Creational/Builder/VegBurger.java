@@ -9,10 +9,16 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
-    
-    public String name();
-    public Packing packing();
-    public float price();
+public class VegBurger extends Burger{
+
+    @Override
+    public float price() {
+        return 10.50f;
+    }
+
+    @Override
+    public String name() {
+        return "Veg Burger";
+    }
     
 }

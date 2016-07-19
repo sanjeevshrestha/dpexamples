@@ -9,10 +9,15 @@ package designpatterns.Creational.Builder;
  *
  * @author sanjeev
  */
-public interface Item {
-    
-    public String name();
-    public Packing packing();
-    public float price();
+public abstract class Burger implements Item{
+
+   
+    @Override
+    public Packing packing() {
+        return new Wrapper();
+    }
+
+    @Override
+    public abstract float price();
     
 }
